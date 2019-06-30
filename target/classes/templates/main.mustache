@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <title>Главная страница</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!--===============================================================================================-->
+   <link rel="icon" type="image/png" href="../images/icons/favicon.ico"/>
+   <style>
+      body{
+         font-family: sans-serif;
+      }
+      .main-btn-form {
+         font-size: 20px;
+         width: 120px;
+         background-color: #179E98;
+         color: white;
+         height: 40px;
+         text-decoration: none;
+         border-radius: 9px;
+         border: none
+      }
+
+      .main-btn-form-exit {
+         font-size: 15px;
+         width: 100px;
+         background-color: #caccd1;
+         color: white;
+         height: 30px;
+         text-decoration: none;
+         border-radius: 9px;
+         border: none
+      }
+
+      .main-btn-menu {
+         font-size: 20px;
+         width: 60%;
+         background-color: #FACB1D;
+
+         height: 40px;
+         text-decoration: none;
+         border-radius: 9px;
+         margin-left: 20%;
+      }
+   </style>
+
+</head>
+
+<body>
+<p>
+   <div>
+      <form action="/logout" method="post">
+<p style=" text-align: right;">
+   <input name="_csrf" type="hidden" value="{{_csrf.token}}"/> <input type="submit" value="Выйти"
+                                                                    class="main-btn-form-exit" />
+</p>
+</form>
+</div>
+
+</p>
+
+
+   <table border="0" cellpadding="2" cellspacing="2" align="center" style="width:100%">
+      <tbody>
+      <tr>
+         <td style="width: 65%">
+            <a href="/producttable" style="text-decoration: none">
+               <div class="main-btn-menu">
+                  <p style="color: white; padding-top: 7px;     text-align: center;">
+                     Склад.Список товаров.
+                  </p>
+               </div>
+            </a>
+         </td>
+      </tr>
+
+      <tr>
+         <td style="width: 65%">
+            <a href="/main" style="text-decoration: none">
+               <div class="main-btn-menu" style="background-color: #FFA073">
+                  <p style="color: white; padding-top: 7px;     text-align: center;">
+                     Отчетность
+                  </p>
+               </div>
+            </a>
+         </td>
+      </tr>
+
+      <tr>
+         <td style="width: 65%">
+            <a href="/main" style="text-decoration: none">
+               <div class="main-btn-menu" style="background-color: #179E98;">
+                  <p style="color: white; padding-top: 7px;     text-align: center;">
+                     Магазин.Касса.
+                  </p>
+               </div>
+            </a>
+         </td>
+      </tr>
+
+
+
+
+      <tr>
+         <td style="width: 65%">
+            <a href="/main" style="text-decoration: none">
+               <div class="main-btn-menu" style="background-color: #DE4215">
+                  <p style="color: white; padding-top: 7px;     text-align: center;">
+                     Администрирование
+                  </p>
+               </div>
+            </a>
+         </td>
+      </tr>
+
+
+
+
+<!--
+         <td style="width: 65%">&nbsp;
+            <div><a href="/productname">Словарь. Наименование товара</a></div>
+         </td>
+         <td style="width: 5%">
+            <div><a href="/composition">Словарь. Состав</a></div>
+         </td>
+         <td style="width: 15%">
+
+         </td>
+      </tr>
+-->
+
+      </tbody>
+   </table>
+
+
+</body>
+</html>
